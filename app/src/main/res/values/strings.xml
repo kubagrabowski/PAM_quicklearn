@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PAM_quicklearn</string>
+    <string name="lekcja_pierwsza">Lekcja pierwsza</string>
+    <string name="lekcja_druga">Lekcja druga</string>
+    <string name="lekcja_trzecia">Lekcja trzecia</string>
+    <string name="main_textview_tresc">Wycieczka \n po świecie kultury</string>
+</resources>
