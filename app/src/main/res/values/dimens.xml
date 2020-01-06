@@ -4,4 +4,6 @@
     <dimen name="main_button_margin">10dp</dimen>
     <dimen name="main_button_txtSize">15sp</dimen>
     <dimen name="main_textSize">28sp</dimen>
+    <dimen name="frag_lek_buttonText">20dp</dimen>
+    <dimen name="frag_lek_buttonmargin">10dp</dimen>
 </resources>
