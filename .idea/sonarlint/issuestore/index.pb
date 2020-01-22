@@ -1,3 +1,33 @@
 
 l
 <app/src/main/java/com/example/pam_quicklearn/MainActivity.kt,1\6\16a1853dd692b8c4e8aa43abc8d2d09e93a84877
+p
+@app/src/main/java/com/example/pam_quicklearn/Fragment_lekcja1.kt,e\f\ef722d07d43762e8de304585a24cb95943dfd465
+p
+@app/src/main/java/com/example/pam_quicklearn/Fragment_lekcja2.kt,4\8\48bf19ee0aa0833bf473fc4a387c045ac2349ab1
+p
+@app/src/main/java/com/example/pam_quicklearn/Fragment_lekcja3.kt,8\7\87937f7ee561a95bbc20b92375403aedb1abaf28
+o
+?app/src/main/java/com/example/pam_quicklearn/Lekcja_act_frag.kt,9\f\9fabca069dfac89c1c31ec3c01e5fdeffcec2aed
+d
+4app/src/main/res/layout/activity_lekcja_act_frag.xml,c\6\c616a50fb11f5a449c3725cb590a2abe309b902f
+Y
+)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
+\
+,app/src/main/res/layout/fragment_lekcja1.xml,2\7\2735ef1272feba1d888eb8852cfd6a6232169f48
+\
+,app/src/main/res/layout/fragment_lekcja2.xml,6\a\6a0740745f45fa10cd1daea504c3289d61b7e81f
+\
+,app/src/main/res/layout/fragment_lekcja3.xml,e\1\e13d3aa0dcc35734f261203487a6680535d6793b
+R
+"app/src/main/res/values/colors.xml,9\6\969faa2a5d9f5e8390e958d2c07f2cfd54676e6b
+R
+"app/src/main/res/values/dimens.xml,c\3\c3c1811dec2dbad2deeafb9aad505ca9631da740
+S
+#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+l
+<app/src/main/java/com/example/pam_quicklearn/PlayerHolder.kt,4\1\418607d087bf5babad528ec2471d3990fabc97e5

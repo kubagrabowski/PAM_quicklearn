@@ -5,6 +5,8 @@ import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
+import android.webkit.WebViewFragment
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -19,9 +21,17 @@ class Lekcja_act_frag : AppCompatActivity() {
     var fragL2: Fragment? = null
     var fragL3: Fragment? = null
 
+    val state = PlayerState()
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lekcja_act_frag)
+
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
+
+
 
         val actionBar = supportActionBar
 
@@ -35,8 +45,8 @@ class Lekcja_act_frag : AppCompatActivity() {
         aktualna = intent.getIntExtra("AKTUALNA", 1)
 
         fragL1 = Fragment_lekcja1()
-        fragL2 = Fragment_lekcja2()
-        fragL3= Fragment_lekcja3()
+        fragL2 = Fragment_lekcja2(this, state)
+        fragL3= Fragment_lekcja3(this, state)
 
         val transakcja: FragmentTransaction = supportFragmentManager.beginTransaction()
 
@@ -89,6 +99,41 @@ class Lekcja_act_frag : AppCompatActivity() {
             transakcja.replace(R.id.fragment_lekcja, fragL3!!)
             transakcja.commit()
         }
+    }
+
+    fun frag2setHamilton(view:View){
+        (fragL2 as Fragment_lekcja2).setHamilton()
+    }
+
+    fun frag2setHansen(view:View){
+        //fragL2!!.onStop()
+        //state.source = SourceType.local_video
+        //state.whenReady = false
+        //state.position = 0
+        //state.window = 0
+        //state.uristringAudio =  "assets:///Hansen.mp3"
+
+        //val fragment:Fragment_lekcja2 = supportFragmentManager.findFragmentById(R.id.fragment_lekcja) as Fragment_lekcja2
+        //fragment.cos()
+
+        (fragL2 as Fragment_lekcja2).setHansen()
+
+        //fragL2!!.onStart()
+    }
+
+    fun frag2setHeathers(view:View){
+        (fragL2 as Fragment_lekcja2).setHeathers()
+    }
+
+
+    fun frag3setHamilton(view:View){
+        (fragL3 as Fragment_lekcja3).setHamilton()
+    }
+
+    fun frag3setHansen(view:View){
+
+        (fragL3 as Fragment_lekcja3).setHansen()
+
     }
 
 

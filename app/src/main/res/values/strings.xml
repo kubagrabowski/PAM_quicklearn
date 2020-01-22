@@ -5,4 +5,28 @@
     <string name="lekcja_trzecia">Lekcja trzecia</string>
     <string name="main_textview_tresc">Wycieczka \n po świecie kultury</string>
     <string name="main_toast_odblokuj">Najpierw zapoznaj się z poprzednimi lekcjami</string>
+
+    <string name="frag1_hamiltontext">Musical Hamilton – musical autorstwa Lin-Manuela Mirandy o życiu ojca założyciela Stanów Zjednoczonych Alexandra Hamiltona zainspirowany biografią Alexander Hamilton Rona Chernowa.
+Hamilton zadebiutował na Off-Broadwayu 20 stycznia 2015 roku w Richard Rodgers Theatre. Po wrześniowym przeniesieniu się na Broadway musical otrzymał liczne pozytywne recenzje oraz odnotował bardzo wysokie wyniki sprzedaży biletów. Produkcja otrzymała rekordową liczbę 16 nominacji do nagród Tony, wygrywając 11. Spektakl jest laureatem nagrody Grammy za najlepszy album z muzyką teatralną.
+</string>
+    <string name="frag1_hansentext"> Dear Evan Hansen – musical z muzyką i słowami stworzonymi przez Benja Paseka i Justina Paula oraz książka autorstwa Stevena Levensoa.
+Pierwszy koncert na Broadwayu odbył się w Music Box Theatre w grudniu 2016 roku, po swojej światowej premierze w Arena Stage w Waszyngtonie w lipcu 2015 i w produkcji pozabroadwayowej od marca do maja 2016.
+</string>
+    <string name="frag1_heatherstext"> Heathers: The Musical to rockowy musical napisany przez Laurence OKeefe i Kevina Murphy oparty o film z 1988 o tej samej nazwie napisany przez Daniela Watersa W 2014 pojawił się na Off-Broadway.
+    Jest to amerykańska czarna komedia otwierająca możliwość rozmowy na trudne tematy jak dręczenie, nastoletnie próby samobójcze, napaści na tle seksualnym oraz agresję w szkołach.
+</string>
+
+    <string name="hamilton">Hamilton</string>
+    <string name="hansen">Dear Evan Hansen</string>
+    <string name="heathers">Heathers</string>
+
+    <string name="frag2_hamiltontext">Inspiracją głośnego hip-hopowego musicalu „Hamilton” stała się opasła, 818-stronicowa biografia przywódcy federalistów – Aleksandra Hamiltona – pióra amerykańskiego historyka Rona Chernowa. Lin-Manuel Miranda, twórca musicalu, zabrał rzeczoną książkę na wakacje do Meksyku. Po przeczytaniu pierwszego rozdziału uznał, że życie Hamiltona doskonale można ukazać w konwencji musicalu. Sztuka okazała się być hitem – zyskała pochlebne recenzje, a bilety na nią rozeszły się szybko, przez co stała się prawdziwym wydarzeniem na Broadway. Została też bardzo dobrze przyjęta przez krytyków, w opinii których obraz przeszłości ukazany jest w bardzo ciekawy i nowatorski sposób.Akcja spektaklu rozpoczyna się w 1772 roku, gdy młody Hamilton przybywa na studia do Nowego Jorku, miasta z którym wiązać się będzie cała jego późniejsza kariera wojskowa, prawnicza i polityczna. W musicalu pojawiają się główne postacie, z którymi związany był Hamilton – Jerzy Waszyngton, który mianuje go swoim adiutantem, jego polityczny przyjaciel James Medison, oraz główny rywal – Thomas Jefferson. Autor umieszcza też w sztuce mocno przerysowaną postać króla Jerzego III. Jak na dobry brodwayowski musical przystało pojawia się też wątek uczuciowego życia bohatera – związku z żoną Elizabeth „Betsey” Szchuyler oraz kilka pobocznych romansów. </string>
+    <string name="frag2_hansentext">Tytułowa postać, Evan Hansen, jest licealistą z silnym lękiem społecznym, który utrudnia mu kontakty z innymi ludźmi i zawieranie przyjaźni. Po śmierci jednego z jego kolegów tworzy kłamstwo, które nieumyślnie zbliża go do rodziny zmarłego, jednocześnie pozwalając mu uzyskać własne poczucie celu oraz przynależności.</string>
+    <string name="frag2_heatherstext">17-letnia Veronica Sawyer należy do szkolnej elity, w której królują: liderka Heather Chandler , podatna na wpływy Heather McNamara oraz bulimiczka Heather Duke. Podczas jednej z przerw Veronica poznaje tajemniczego chłopaka o opinii buntownika, Jasona Deana , który okazuje się mieć przy sobie broń. JD zainteresowuje się Veronicą, lecz Chandler stara się zapobiec czemukolwiek pomiędzy nimi.
+Heather Chandler zaprasza Veronicę na imprezę w popularnym akademiku, gdzie panuje niekontrolowany chaos. Po spotkaniu z natrętnym chłopakiem Veronica wychodzi zdenerwowana, a za nią biegnie Heather, która wyzywa ją od najgorszych i grozi, że każdemu o tym opowie.
+</string>
+
+    <string name="frag3_hamiltontext">Zdobyte nagrody Tony : Najlepszy musical: "Hamilton"  Najlepsza książka o musicalu: Lin-Manuel Miranda, "Hamilton" Najlepsza ścieżka dźwiękowa napisana dla teatru: "Hamilton"  Najlepsza drugoplanowa rola męska w musicalu: Daveed Diggs, "Hamilton"  Najlepsza drugoplanowa rola żeńska w musicalu: Renee Elise Goldsberry, "Hamilton". Oprócz tego Hamilton miał przyjemność być prezentowany w Białym Domu.</string>
+    <string name="frag3_hansentext">Dear Evan Hansen został nominowany do dziewięciu nagród Tony, zdobywając sześć, w tym nagrodę za najlepszy musical, najlepszy wynik, najlepszego aktora w musicalu dla Platta i najlepszą wyróżnioną aktorkę dla Rachel Bay Jones. Musical ma swoje początki w zdarzeniu, które miało miejsce w latach licealnych Paska. Musical „ukazuje przykład nastolatka,Evan Hansen, który wymyśla ważną rolę dla siebie w tragedii, w której nie brał udziału.”
+</string>
 </resources>

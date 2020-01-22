@@ -1,6 +1,13 @@
 package com.example.pam_quicklearn
 
+import android.annotation.TargetApi
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.os.Build
 import android.os.Bundle
+import android.text.Html
+import android.text.Html.FROM_HTML_MODE_LEGACY
+import android.text.Spanned
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,10 +27,14 @@ class Fragment_lekcja1 : Fragment() {
         return view
     }
 
+    @TargetApi(Build.VERSION_CODES.N)
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        textView2.text = "LEKCJA 1 NA SERIO"
+
+        val napis = getString(R.string.frag1_hamiltontext) + "\n\n" + getString(R.string.frag1_hansentext) + "\n\n" + getString(R.string.frag1_heatherstext)
+        frag1_tekst.text = napis
+
     }
 
 }
