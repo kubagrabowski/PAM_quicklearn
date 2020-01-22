@@ -30,11 +30,12 @@
         android:layout_marginBottom="@dimen/frag_lek_buttonmargin"
         android:background="@color/seance"
         android:onClick="do1Test"
-        android:text="Do testu 3"
+        android:text="Sprawdź się"
         android:textColor="@color/gamboge"
         android:textSize="@dimen/frag_lek_buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <ScrollView
@@ -46,12 +47,54 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         tools:layout_editor_absoluteX="1dp">
 
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/fragst"
-            android:textSize="20dp"
-            />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frag1_tekst"
+                android:textSize="30dp"
+                android:textColor="@color/pomegranate"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Który z bohaterów Hamiltona nie występuje w utworze Non-Stop"
+                />
+
+            <CheckBox
+                android:id="@+id/test3_check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phillipa Soo jako Eliza Hamilton"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <CheckBox
+                android:id="@+id/test3_check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jonathan Groff jako król Jerzy III"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <CheckBox
+                android:id="@+id/test3_check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daveed Diggs jako Marquis de Lafayette"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pomoc3"/>
+
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

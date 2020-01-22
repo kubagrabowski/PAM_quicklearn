@@ -11,4 +11,7 @@
 
     <color name="rock">#523F39</color>
 
+    <color name="rej">#DF0707</color>
+    <color name="akc">#33BB0C</color>
+
 </resources>

@@ -37,7 +37,7 @@ class Lekcja_act_frag : AppCompatActivity() {
         val actionBar = supportActionBar
 
         actionBar!!.run{
-            title = "Lek"
+            title = "Lekcje"
             setDisplayHomeAsUpEnabled(true)
             setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(applicationContext,R.color.seance)))
         }

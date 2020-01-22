@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.fragment_test2.*
 class Fragment_test2(val con: Context, val state:PlayerState): Fragment() {
 
     lateinit var playerHolder: PlayerHolder
+    var wynik = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -58,4 +59,37 @@ class Fragment_test2(val con: Context, val state:PlayerState): Fragment() {
 
     }
 
+    fun test2ogarMojWybor() : Int{
+        if( (test2_check1.isChecked && test2_check2.isChecked) || (test2_check3.isChecked && test2_check2.isChecked) || (test2_check1.isChecked && test2_check3.isChecked)){
+            return -1
+        }
+        else if(test2_check1.isChecked){
+            wynik = 1
+            return 1
+        }
+        else if(test2_check2.isChecked){
+            wynik = 2
+            return 2
+        }
+        else if(test2_check3.isChecked){
+            wynik = 3
+            return 3
+        }
+        else return 0
+    }
+
+    fun test2Odpowiedzi(wybor:Int){
+        when(wybor){
+            1 -> test2_check1.setTextColor(resources.getColor(R.color.rej))
+            2 -> test2_check2.setTextColor(resources.getColor(R.color.rej))
+            3 -> test2_check3.setTextColor(resources.getColor(R.color.rej))
+        }
+        if(wynik != 0) test2_check3.setTextColor(resources.getColor(R.color.akc))
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        test2Odpowiedzi(wynik)
+    }
 }

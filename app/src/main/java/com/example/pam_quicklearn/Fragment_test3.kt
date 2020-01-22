@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.fragment_test3.*
 class Fragment_test3(val con: Context, val state:PlayerState): Fragment() {
 
     lateinit var playerHolder: PlayerHolder
+    var wynik = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -57,6 +58,40 @@ class Fragment_test3(val con: Context, val state:PlayerState): Fragment() {
 
         val napis = getString(R.string.hamilton) + "\n\n" + getString(R.string.frag2_hamiltontext) + "\n\n" + getString(R.string.hansen) + "\n\n" + getString(R.string.frag2_hansentext) + "\n\n" + getString(R.string.heathers) + "\n\n" + getString(R.string.frag2_heatherstext)
 
+    }
+
+    fun test3ogarMojWybor() : Int{
+        if( (test3_check1.isChecked && test3_check2.isChecked) || (test3_check3.isChecked && test3_check2.isChecked) || (test3_check1.isChecked && test3_check3.isChecked)){
+            return -1
+        }
+        else if(test3_check1.isChecked){
+            wynik = 1
+            return 1
+        }
+        else if(test3_check2.isChecked){
+            wynik = 2
+            return 2
+        }
+        else if(test3_check3.isChecked){
+            wynik = 3
+            return 3
+        }
+        else return 0
+    }
+
+    fun test3Odpowiedzi(wybor:Int){
+        when(wybor){
+            1 -> test3_check1.setTextColor(resources.getColor(R.color.rej))
+            2 -> test3_check2.setTextColor(resources.getColor(R.color.rej))
+            3 -> test3_check3.setTextColor(resources.getColor(R.color.rej))
+        }
+        if (wynik!=0) test3_check2.setTextColor(resources.getColor(R.color.akc))
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        test3Odpowiedzi(wynik)
+        if(wynik != 0) test3_next.text = "Powrót"
     }
 
 }

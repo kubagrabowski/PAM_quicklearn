@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val actionBar = supportActionBar
-        actionBar!!.title = "Świat kultury"
+        actionBar!!.title = "Świat musicali"
         actionBar.setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(applicationContext, R.color.seance)))
 
     }

@@ -30,7 +30,7 @@
         android:layout_marginBottom="@dimen/frag_lek_buttonmargin"
         android:background="@color/seance"
         android:onClick="do3Test"
-        android:text="Do testu 3"
+        android:text="Następny"
         android:textColor="@color/gamboge"
         android:textSize="@dimen/frag_lek_buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,12 +46,53 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         tools:layout_editor_absoluteX="1dp">
 
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/fragekst"
-            android:textSize="20dp"
-            />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frag1_tekst"
+                android:textSize="30dp"
+                android:textColor="@color/pomegranate"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Gdzie był wystawiany musical Hamilton?"
+                />
+
+            <CheckBox
+                android:id="@+id/test2_check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We Wrocławiu"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <CheckBox
+                android:id="@+id/test2_check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Na Broadwayu"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <CheckBox
+                android:id="@+id/test2_check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Na Broadwayu oraz w Białym Domu"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pomoc2"/>
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

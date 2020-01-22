@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/frag1_tworca1"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/hamilton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lynnmanuel"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,7 @@
         android:layout_marginBottom="@dimen/frag_lek_buttonmargin"
         android:background="@color/seance"
         android:onClick="do2Test"
-        android:text="Do testu 2"
+        android:text="Następny"
         android:textColor="@color/gamboge"
         android:textSize="@dimen/frag_lek_buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,14 +43,59 @@
         android:weightSum="4"
         app:layout_constraintBottom_toTopOf="@+id/lek1_prev"
         app:layout_constraintTop_toBottomOf="@id/guideline6"
-        tools:layout_editor_absoluteX="1dp">
+        tools:layout_editor_absoluteX="1dp"
+        android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/frag1_tekst"
-            android:textSize="20dp"
-            />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frag1_tekst"
+                android:textSize="30dp"
+                android:textColor="@color/pomegranate"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Kto napisał musical Hamilton?"
+                />
+
+            <CheckBox
+                android:id="@+id/test1_check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lin-Manuel Miranda"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <CheckBox
+                android:id="@+id/test1_check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laurence O'Keefe i Kevin Murphy"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <CheckBox
+                android:id="@+id/test1_check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Benj Paseka i Justin Paul"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="453dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pomoc1"/>
+
+        </LinearLayout>
+
+
 
     </ScrollView>
 
@@ -62,5 +107,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.30" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
