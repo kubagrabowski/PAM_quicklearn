@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".Test_act_frag">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_test"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -95,4 +95,18 @@
             />
     </ScrollView>
 
+    <Button
+        android:textSize="@dimen/frag_lek_buttonText"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testuj"
+        android:background="@color/seance"
+        android:onClick="startTestow"
+        android:layout_marginBottom="@dimen/frag_lek_buttonmargin"
+        android:textColor="@color/gamboge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lek3_next"
+        app:layout_constraintStart_toEndOf="@+id/lek3_prev" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

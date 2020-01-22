@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/scroliew3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            app:default_artwork="@drawable/hamilton"
+            android:id="@+id/exoplayer_fragmenttest2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/test2_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/frag_lek_buttonmargin"
+        android:layout_marginBottom="@dimen/frag_lek_buttonmargin"
+        android:background="@color/seance"
+        android:onClick="do3Test"
+        android:text="Do testu 3"
+        android:textColor="@color/gamboge"
+        android:textSize="@dimen/frag_lek_buttonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ScrollView
+
+        android:id="@+id/scroliew3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/test2_next"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragekst"
+            android:textSize="20dp"
+            />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

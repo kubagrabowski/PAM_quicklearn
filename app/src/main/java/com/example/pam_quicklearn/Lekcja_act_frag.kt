@@ -1,6 +1,7 @@
 package com.example.pam_quicklearn
 
 import android.app.Activity
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -36,7 +37,7 @@ class Lekcja_act_frag : AppCompatActivity() {
         val actionBar = supportActionBar
 
         actionBar!!.run{
-            title = "TEST"
+            title = "Lek"
             setDisplayHomeAsUpEnabled(true)
             setBackgroundDrawable(ColorDrawable(ContextCompat.getColor(applicationContext,R.color.seance)))
         }
@@ -69,6 +70,11 @@ class Lekcja_act_frag : AppCompatActivity() {
 
         //onBackPressed()
         return true
+    }
+
+    fun startTestow(view:View){
+        val intent = Intent(this, Test_act_frag::class.java)
+        startActivity(intent)
     }
 
     fun do1Lekcji(view:View){
