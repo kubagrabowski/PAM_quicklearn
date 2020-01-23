@@ -26,6 +26,8 @@
         android:id="@+id/test3_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:height="@dimen/main_button_height"
+        android:width="150dp"
         android:layout_marginRight="@dimen/frag_lek_buttonmargin"
         android:layout_marginBottom="@dimen/frag_lek_buttonmargin"
         android:background="@color/seance"

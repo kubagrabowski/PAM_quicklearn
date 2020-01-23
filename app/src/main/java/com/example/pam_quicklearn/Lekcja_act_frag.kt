@@ -85,14 +85,22 @@ class Lekcja_act_frag : AppCompatActivity() {
     }
 
     fun do2Lekcji(view:View){
+        if(odblok>=2){
+            frag2setHamilton(view)
+        }
         aktualna = 2
         odblok = if (odblok ==3 ) 3 else 2
         val transakcja:FragmentTransaction = supportFragmentManager.beginTransaction()
         transakcja.replace(R.id.fragment_lekcja, fragL2!!)
         transakcja.commit()
+
+
     }
 
     fun do3Lekcji(view:View){
+        if(odblok>=3){
+            frag3setHamilton(view)
+        }
         if(odblok == 1)
         {
             Toast.makeText(this, getString(R.string.main_toast_odblokuj), Toast.LENGTH_SHORT).show()
@@ -104,6 +112,7 @@ class Lekcja_act_frag : AppCompatActivity() {
             val transakcja: FragmentTransaction = supportFragmentManager.beginTransaction()
             transakcja.replace(R.id.fragment_lekcja, fragL3!!)
             transakcja.commit()
+
         }
     }
 

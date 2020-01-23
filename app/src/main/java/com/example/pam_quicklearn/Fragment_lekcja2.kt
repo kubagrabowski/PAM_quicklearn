@@ -78,6 +78,8 @@ class Fragment_lekcja2(val con: Context, val state:PlayerState) : Fragment() {
         playerHolder.release()
     }
 
+
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
@@ -85,6 +87,7 @@ class Fragment_lekcja2(val con: Context, val state:PlayerState) : Fragment() {
         playerHolder.playerState.position = 0
         playerHolder.playerState.window = 0
         playerHolder.playerState.whenReady = false
+        playerHolder.playerState.uristringAudio =  "assets:///Hamilton.mp3"
 
 
         val napis = getString(R.string.hamilton) + "\n\n" + getString(R.string.frag2_hamiltontext) + "\n\n" + getString(R.string.hansen) + "\n\n" + getString(R.string.frag2_hansentext) + "\n\n" + getString(R.string.heathers) + "\n\n" + getString(R.string.frag2_heatherstext)
